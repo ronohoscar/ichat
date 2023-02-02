@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>LetsChat</title>
+    <link rel="stylesheet" type="text/css" href="chat.css">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>LetsChat</h1>
+      </header>
+      <main>
+        <div id="go-bak">
+          <form>
+            <input type="button" value="Go back To Log Out" onclick="history.back()">
+           </form>
+        </div>
+        <div id="chat-window">
+          <ul id="messages"></ul>
+        </div>
+        <form id="message-form">
+          <input type="text" id="message-input" placeholder="Enter your message">
+          <button type="submit">Send</button>
+        </form>
+      </main>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+    <script src="firebase.js"></script>
+    <script src="index.js"></script>
+    <script src="script.js"></script
+  </body>
+</html>
